@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css'
+import Starry from './components/Starry'
+import Slider from './components/Slider'
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <img src={reactLogo} className="react-logo" alt="logo" />
       </header> */}
       {/* <Hello /> */}
+      {<Slider />}
     </div>
   )
 }
