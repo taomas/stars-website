@@ -1,5 +1,11 @@
 const path = require('path')
-const { override, overrideDevServer, addWebpackAlias, addLessLoader } = require('customize-cra')
+const {
+  override,
+  overrideDevServer,
+  addWebpackAlias,
+  addLessLoader,
+  disableEsLint
+} = require('customize-cra')
 
 const setOutputFilename = (filename) => (config) => {
   config.output = {
@@ -20,6 +26,7 @@ const setDevHeaders = (headers) => (config, env) => {
 
 module.exports = {
   webpack: override(
+    disableEsLint(),
     addWebpackAlias({
       '@': path.join(__dirname, './src')
     }),

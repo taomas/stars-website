@@ -20,6 +20,7 @@ module.exports = {
     // 这里填入你的项目需要的个性化配置
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    'react/jsx-no-target-blank': 'off'
+    'react/jsx-no-target-blank': 'off',
+    'react/self-closing-comp': 'off'
   }
 }
