@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 import Starry from './components/Starry'
 import Slider from './components/Slider'
@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/music/slider" component={Slider}></Route>
-          <Route exact path="/music/starry" component={Starry}></Route>
+          <Route exact path="/slider" component={Slider}></Route>
+          <Route exact path="/starry" component={Starry}></Route>
           <Route exact path="*">
-            <Redirect to="/music/starry" />
+            <Redirect to="/starry" />
           </Route>
         </Switch>
       </Router>
