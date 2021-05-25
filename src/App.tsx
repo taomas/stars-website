@@ -2,16 +2,14 @@ import React from 'react'
 import './App.css'
 import Starry from './components/Starry'
 import Slider from './components/Slider'
+import Music from './components/Music'
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img className="logo" alt="CloudBase logo" src={cloudbaseLogo} />
-        <img src={reactLogo} className="react-logo" alt="logo" />
-      </header> */}
-      {/* <Hello /> */}
-      {<Slider />}
+      <Starry />
+      {/* {<Slider />} */}
+      <Music />
     </div>
   )
 }
