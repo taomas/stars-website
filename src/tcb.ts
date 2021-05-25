@@ -6,8 +6,6 @@ declare global {
   }
 }
 
-// window._tcbEnv.TCB_ENV_ID = 'hello-cloudbase-9g9gtebf851318fd'
-
 // 将你的环境 Id 填写到此处
 window._tcbEnv = window._tcbEnv || {}
 export const envId = window._tcbEnv.TCB_ENV_ID
@@ -15,7 +13,7 @@ export const region = window._tcbEnv.TCB_REGION
 
 export const getApp = () => {
   const app = tcb.init({
-    env: 'hello-cloudbase-9g9gtebf851318fd',
+    env: 'tcbc-5gec2iru4409fe61',
     region: region
   })
 
